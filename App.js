@@ -1,20 +1,11 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { View, Image } from 'react-native';
+import Home from './component/Home/Home/Home';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Hello from react nat</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <Home></Home>
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
